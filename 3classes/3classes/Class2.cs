@@ -8,7 +8,7 @@ namespace ThreeClasses
 {
     public class Class2
     {
-        public int ResultOfPow { get; private set; }
+        private int ResultOfPow { get; set; }
         public Predicate<int> Calc(Func<int, int, int> powHandler, int x, int y)
         {
             ResultOfPow = powHandler(x, y);
